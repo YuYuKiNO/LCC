@@ -118,13 +118,14 @@
             img.src = path;
             img.onload = () => {
                 canvas.drawImage(img, 0, 0);
-                canvas.lineWidth = 4;
+                canvas.lineWidth = 2;
                 canvas.fillStyle = '#212121';   // 文字填充颜色
                 canvas.font = 'normal bold 40px sans-serif';
                 canvas.fontWeight = "700";
                 canvas.fillText(value, 700, 1150);
                 canvas.strokeStyle = "white";
                 canvas.strokeText(value, 700, 1150);
+                canvas.lineWidth = 4;
                 canvas.font = "italic 90px Arial";
                 canvas.fillStyle = "red";
                 canvas.fillText(teamid, 80, 1260);
