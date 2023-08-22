@@ -120,12 +120,13 @@
                 canvas.fillStyle = '#212121';   // 文字填充颜色
                 canvas.font = 'normal bold 100px sans-serif';
                 canvas.fontWeight = "700";
-                canvas.fillText(value, 102, 895);
+                canvas.fillText(value, 102, 1200);
                 canvas.strokeStyle = "white";
-                canvas.strokeText(value, 102, 895);
+                canvas.strokeText(value, 102, 1200);
                 canvas.font = "italic 90px Arial";
                 canvas.fillStyle = "red";
-                canvas.fillText(teamid, 100, 1110);
+                canvas.fillText(teamid, 100, 1320);
+                canvas.strokeText(teamid, 100, 1320);
                 canvas.stroke();
                 let dataImg = new Image()
                 dataImg.src = canvasDom.toDataURL('image/png')
