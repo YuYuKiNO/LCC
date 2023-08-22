@@ -106,6 +106,7 @@
             }else {
                 teamName = selectedValue.toUpperCase();
                 path = 'image/' + teamName + '.jpg';
+                value = teamName + '.' + teamName;
             }
             let teamid = teamName + (Math.floor(Math.random() * 990) + 10).toString().padStart(3, '0');
             if (value == '') {
@@ -121,9 +122,9 @@
                 canvas.fillStyle = '#212121';   // 文字填充颜色
                 canvas.font = 'normal bold 60px sans-serif';
                 canvas.fontWeight = "700";
-                canvas.fillText(value, 700, 1120);
+                canvas.fillText(value, 700, 1140);
                 canvas.strokeStyle = "white";
-                canvas.strokeText(value, 700, 1120);
+                canvas.strokeText(value, 700, 1140);
                 canvas.font = "italic 90px Arial";
                 canvas.fillStyle = "red";
                 canvas.fillText(teamid, 80, 1260);
